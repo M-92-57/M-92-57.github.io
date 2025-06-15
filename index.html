@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header class="main-header">
+    <div class="logo">
+      
+        <!-- Bouton Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="main-nav" id="main-nav">
+      
+        <ul><img src="images/Ma_photo.jpg" alt="Photo de profil" class="logo-pic">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Hero -->
+  <section class="hero" id="accueil">
+    <h1>Je suis <span class="highlight">Aliou Mangane</span>,<br>Développeur web en formation</h1>
+  </section>
+
+  <!-- À propos -->
+  <section id="a-propos" class="about reveal">
+    <div class="intro-photo">
+      <img src="images/Ma_photo.jpg" alt="Photo de profil" class="profile-pic" />
+    </div>
+    <div class="intro-text">
+      <p>Je m’appelle <strong>Aliou Mangane</strong></p>
+      <p>Je suis actuellement étudiant en étudiant en deuxième année d’Informatique de Gestion.<br</p>
+      <p>Passionné par le développement web et les
+        technologies numériques, je possède une bonne compétence des langages du frontend tels que HTML, CSS et
+        JavaScript, ainsi qu’une expérience avec le framework
+        Flutter pour le développement d’interfaces mobiles.</p>
+        <p>Je m’intéresse également au design d’interface et à
+          l'expérience utilisateur et au leadership, des domaines dans lesquels j’ai aussi obtenu des certifications.
+          En parallèle, je suis présentateur de l’émission L’Agora des jeunes, ce qui m’a permis de développer des compétences en communication, gestion de projet et prise de parole en public. </p>
+        <p>Autonome, curieux et rigoureux,
+        je suis à la recherche d’un stage pratique pour améliorer mes competences,
+        consolider mes acquis, découvrir les environnements
+        professionnels de développement et contribuer
+        activement à des projets concrets et innovants.</p>
+        <a href="doc_cv/CV Aliou Mangane[].pdf" target="_blank" class="btn">Télécharger mon CV</a>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="competences" class="skills reveal">
+    <h2>Mes Compétences</h2>
+    <div class="skills-container">
+      <div class="skills-box">
+        <h3>Soft Skills</h3>
+        <div class="skill"><span>Bonne communication</span><div class="bar"><div style="width: 100%;"></div></div></div>
+        <div class="skill"><span>Curiosité et esprit d’initiative</span><div class="bar"><div style="width: 95%;"></div></div></div>
+        <div class="skill"><span>Gestion du temps</span><div class="bar"><div style="width: 90%;"></div></div></div>
+        <div class="skill"><span>Travail en équipe</span><div class="bar"><div style="width: 90%;"></div></div></div>
+        <div class="skill"><span>Adaptabilité</span><div class="bar"><div style="width: 95%;"></div></div></div>
+        <div class="skill"><span>Autonomie – Capacité à apprendre</span><div class="bar"><div style="width: 100%;"></div></div></div>
+      </div>
+      <div class="skills-box">
+        <h3>Hard Skills</h3>
+        <div class="skill"><span>HTML</span><div class="bar"><div style="width: 95%;"></div></div></div>
+        <div class="skill"><span>CSS</span><div class="bar"><div style="width: 90%;"></div></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><div style="width: 80%;"></div></div></div>
+        <div class="skill"><span> Framework : Flutter</span><div class="bar"><div style="width: 50%;"></div></div></div>
+        <div class="skill"><span> Outils Design : Canva, Figma</span><div class="bar"><div style="width: 95%;"></div></div></div>
+        <div class="skill"><span> Outils : Git/GitHub</span><div class="bar"><div style="width: 80%;"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expérience -->
+  <section id="experience" class="experience reveal">
+    <h2>Expérience</h2>
+    <div class="experience-container">
+      <div class="experience-photo">
+        <img src="images/Photo coulisse.jpg" alt="Photo d'expérience" class="experience-img">
+      </div>
+      <div>
+        <p><strong>Présentateur Émission L’Agora des
+          jeunes</strong></p>
+          <p><strong>Télé : Challenge New Media TV </strong></p>
+          <p><strong>Animation d’émissions sur des thèmes
+            sociétaux (numérique, leadership,
+            entrepreneuriat…)</strong></p>
+          <p><strong>Création de fiches invités et de
+            conducteurs d’émission</strong></p>
+         <p><strong>Coordination et modération des débats</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projets" class="projects reveal">
+    <h2>Mes Projets</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <p>• Participation à la conception et au développement d’une application de gestion des élèves et des notes pour une école
+          • Développement des interfaces utilisateurs (HTML, CSS, JavaScript)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section class="contact reveal" id="contact">
+    <h2><span class="green">Merci de me contacter</h2>
+    <form id="contactForm">
+      <div class="form-row">
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+      </div>
+      <input type="text" id="sujet" name="sujet" placeholder="Votre sujet" required>
+      <textarea id="message" name="message" placeholder="Écrivez votre message ici !" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Design : Mangane | avec HTML, CSS, JS</p>
+    <p>Tous droits réservés - 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
