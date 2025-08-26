@@ -8,61 +8,59 @@
 </head>
 <body>
 
-  <!-- En-tête -->
-  <header class="main-header">
-    <div class="logo">
-      
-        <!-- Bouton Hamburger -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+ HEADER 
+<header class="main-header">
+  <div class="logo">
+    <img src="images/Ma_photo.jpg" alt="Logo">
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
 
-    <nav class="main-nav" id="main-nav">
-      
-        <ul><img src="images/Ma_photo.jpg" alt="Photo de profil" class="logo-pic">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#a-propos">À propos</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#experience">Expérience</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Section Hero -->
-  <section class="hero" id="accueil">
-    <h1>Je suis <span class="highlight">Aliou Mangane</span>,<br>Développeur web en formation</h1>
-  </section>
-
-  <!-- À propos -->
-  <section id="a-propos" class="about reveal">
+ HERO (Accueil) 
+<section id="hero" class="hero">
+  <div class="hero-container">
     <div class="intro-photo">
-      <img src="images/Ma_photo.jpg" alt="Photo de profil" class="profile-pic" />
+      <img src="images/Aline Mangane.jpg" alt="Profil de Aliou Mangane">
     </div>
-    <div class="intro-text">
-      <p>Je m’appelle <strong>Aliou Mangane</strong></p>
-      <p>Je suis actuellement étudiant en deuxième année d’Informatique de Gestion.<br</p>
-      <p>Passionné par le développement web et les
-        technologies numériques, je possède une bonne compétence des langages du frontend tels que HTML, CSS et
-        JavaScript, ainsi qu’une expérience avec le framework
-        Flutter pour le développement d’interfaces mobiles.</p>
-        <p>Je m’intéresse également au design d’interface et à
-          l'expérience utilisateur et au leadership, des domaines dans lesquels j’ai aussi obtenu des certifications.
-          En parallèle, je suis présentateur de l’émission L’Agora des jeunes, ce qui m’a permis de développer des compétences en communication, gestion de projet et prise de parole en public. </p>
-        <p>Autonome, curieux et rigoureux,
-        je suis à la recherche d’un stage pratique pour améliorer mes competences,
-        consolider mes acquis, découvrir les environnements
-        professionnels de développement et contribuer
-        activement à des projets concrets et innovants.</p>
-        <a href="doc_cv/Aliou MANGANE CV Pro.pdf" target="_blank" class="btn">Télécharger mon CV</a>
+    <div class="hero-text">
+      <h1>Bonjour, je suis <span class="highlight">Aliou Mangane</span></h1>
+      <p>Étudiant en Informatique de Gestion | Passionné de développement web et mobile</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Compétences -->
+<section id="about" class="about">
+  <div class="intro-text">
+    <h2>À propos de moi</h2>
+    <p>
+      Je suis actuellement étudiant en deuxième année d’Informatique de Gestion.
+      Passionné par le développement web et les technologies numériques, je maîtrise
+      les langages frontend (HTML, CSS, JavaScript) et j’ai une expérience avec le framework
+      Flutter pour le développement mobile.
+    </p>
+    <p>
+      Je m’intéresse également au design d’interface et à l’expérience utilisateur.
+      En parallèle, je suis présentateur de l’émission <em>L’Agora des Jeunes</em>,
+      ce qui m’a permis de développer des compétences en communication, gestion de projet et prise de parole en public.
+    </p>
+  </div>
+</section>
+
+
   <section id="competences" class="skills reveal">
     <h2>Mes Compétences</h2>
     <div class="skills-container">
@@ -80,48 +78,67 @@
         <div class="skill"><span>HTML</span><div class="bar"><div style="width: 95%;"></div></div></div>
         <div class="skill"><span>CSS</span><div class="bar"><div style="width: 90%;"></div></div></div>
         <div class="skill"><span>JavaScript</span><div class="bar"><div style="width: 80%;"></div></div></div>
-        <div class="skill"><span> Framework : Flutter</span><div class="bar"><div style="width: 50%;"></div></div></div>
-        <div class="skill"><span> Outils Design : Canva, Figma</span><div class="bar"><div style="width: 95%;"></div></div></div>
-        <div class="skill"><span> Outils : Git/GitHub</span><div class="bar"><div style="width: 80%;"></div></div></div>
+        <div class="skill"><span>Framework : Flutter</span><div class="bar"><div style="width: 50%;"></div></div></div>
+        <div class="skill"><span>Outils Design : Canva, Figma</span><div class="bar"><div style="width: 95%;"></div></div></div>
+        <div class="skill"><span>Outils : GitHub</span><div class="bar"><div style="width: 80%;"></div></div></div>
       </div>
     </div>
   </section>
-
-  <!-- Expérience -->
-  <section id="experience" class="experience reveal">
-    <h2>Expérience</h2>
-    <div class="experience-container">
-      <div class="experience-photo">
-        <img src="images/Photo coulisse.jpg" alt="Photo d'expérience" class="experience-img">
+  
+<section class="experience-section">
+  <div class="experience-container">
+    <div class="experience-image">
+      <img src="images/MANGANE.jpg" alt="Expérience professionnelle">
+    </div>
+    <div class="experience-content">
+      <h2>Expériences</h2>
+      
+      <div class="experience-item">
+        <h3>Présentateur – <em>L’Agora des Jeunes</em></h3>  
+        <p><strong>Chaîne :</strong> Challenge New Media (CNM TV)</p>
+        <ul>
+          <li>Animation d’émissions sur des thèmes sociétaux (numérique, leadership, entrepreneuriat...)</li>
+          <li>Création de fiches invités et de conducteurs d’émission</li>
+          <li>Coordination et modération des débats</li>
+        </ul>
       </div>
-      <div>
-        <p><strong>Présentateur Émission L’Agora des
-          jeunes</strong></p>
-          <p><strong>Télé : Challenge New Media TV </strong></p>
-          <p><strong>Animation d’émissions sur des thèmes
-            sociétaux (numérique, leadership,
-            entrepreneuriat…)</strong></p>
-          <p><strong>Création de fiches invités et de
-            conducteurs d’émission</strong></p>
-         <p><strong>Coordination et modération des débats</strong></p>
+      
+      <div class="experience-item">
+        <h3>Président – Club Académie des Leaders</h3>
+        <p><strong>Université :</strong> UCAO Saint-Michel</p>
+        <ul>
+          <li>Gestion d’une équipe d’étudiants</li>
+          <li>Organisation d’ateliers, conférences et panels</li>
+          <li>Coordination avec des partenaires internes et externes</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section> 
 
-  <!-- Projets -->
-  <section id="projets" class="projects reveal">
-    <h2>Mes Projets</h2>
+  <section id="projets-academiques" class="projects reveal">
+    <h2>Projets Académiques</h2>
     <div class="project-grid">
       <div class="project-card">
-        <p>• Participation à la conception et au développement d’une application de gestion des élèves et des notes pour une école
-          • Développement des interfaces utilisateurs (HTML, CSS, JavaScript)</p>
+        <p><strong>Portfolio :</strong> Développement d’un site personnel (HTML, CSS, JavaScript)</p>
+        <p><strong>Site vitrine :</strong> Création d’une page responsive pour une entreprise (HTML, CSS, JavaScript)</p>
+        <p><strong>Mini-application :</strong> Gestion de bibliothèque (Flutter, Dart)</p>
       </div>
     </div>
   </section>
 
-  <!-- Section Contact -->
+  <section id="certifications" class="projects reveal">
+    <h2>Certifications</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <p><strong>Certificat en Intelligence Artificielle :</strong> Avec FORCE-N (2024)</p>
+        <p><strong>Certification en Développement Personnel, Art Oratoire et Leadership :</strong> AUF (2024)</p>
+      </div>
+    </div>
+  </section>
+
   <section class="contact reveal" id="contact">
-    <h2><span class="green">Merci de me contacter</h2>
+    <h2><span class="green">Merci de me contacter</span></h2>
     <form id="contactForm">
       <div class="form-row">
         <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
@@ -133,7 +150,12 @@
     </form>
   </section>
 
-  <!-- Footer -->
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>  
+
   <footer>
     <p>Design : Mangane | avec HTML, CSS, JS</p>
     <p>Tous droits réservés - 2025</p>
