@@ -1,33 +1,27 @@
-// ✅ Validation du formulaire de contact
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById('contactForm');
-  const hamburger = document.getElementById('hamburger');
-  const nav = document.getElementById('main-nav');
+// === MENU HAMBURGER ===
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("main-nav");
 
-  // Sécurité : vérifier que les éléments existent
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const prenom = document.getElementById('prenom')?.value.trim();
-      const nom = document.getElementById('nom')?.value.trim();
-      const sujet = document.getElementById('sujet')?.value.trim();
-      const message = document.getElementById('message')?.value.trim();
-
-      if (!prenom || !nom || !sujet || !message) {
-        alert("Merci de remplir tous les champs !");
-        return;
-      }
-
-      alert(`Merci ${prenom}, votre message a bien été envoyé !`);
-      form.reset();
-    });
-  }
-
-  // ✅ Toggle menu responsive
-  if (hamburger && nav) {
-    hamburger.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
-  }
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("show"); // Ajoute/enlève la classe .show définie dans le CSS
+  hamburger.classList.toggle("active");
 });
+
+// === ANIMATION REVEAL AU SCROLL ===
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let revealTop = reveals[i].getBoundingClientRect().top;
+    let revealPoint = 150; // décalage avant l'apparition
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", revealOnScroll);
